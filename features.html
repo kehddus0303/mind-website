@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>기능 — Mind</title>
+  <meta name="description" content="아이디어 보드, 코드맵과 살아있는 링크, AI 에이전트, 실시간 협업 — Mind의 기능을 자세히 살펴보세요." />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="Mind" /><span>Mind</span></a>
+    <div class="nav-links">
+      <a href="features.html" style="color:var(--text)">기능</a>
+      <a href="guide.html">시작 가이드</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <div class="nav-spacer"></div>
+    <a class="btn btn-primary" href="download.html">다운로드</a>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <h1>기획부터 코드까지, 끊기지 않는 흐름</h1>
+    <p>Mind의 네 가지 축을 자세히 소개합니다.</p>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="detail">
+    <div>
+      <h2>아이디어 보드</h2>
+      <p>앱을 켜면 바로 보이는 무한 화이트보드입니다. 회의 내용, 기획 아이디어, 화면 스케치를
+      형식에 얽매이지 않고 펼쳐놓으세요.</p>
+      <ul>
+        <li>메모·텍스트·도형(사각형/원/마름모)과 화살표 연결</li>
+        <li>펜과 형광펜으로 자유롭게 드로잉</li>
+        <li>PDF·Word·PPT 문서를 끌어다 놓으면 보드 위에 펼쳐지고, AI가 내용을 읽을 수 있습니다</li>
+        <li>클립보드 이미지 바로 붙여넣기</li>
+        <li>공유용 HTML·PNG·SVG 내보내기</li>
+        <li>열어둔 폴더에 자동 저장 — 별도 저장 버튼이 없습니다</li>
+      </ul>
+    </div>
+    <div class="media"><img src="assets/screenshot-board.png" alt="아이디어 보드" /></div>
+  </div>
+
+  <div class="detail flip">
+    <div>
+      <h2>코드맵과 살아있는 링크</h2>
+      <p>프로젝트의 파일 구조를 방사형 지도로 탐색하고, 보드의 아이디어를 실제 코드 파일과
+      연결하세요. 연결은 양방향으로 살아 있습니다.</p>
+      <ul>
+        <li>폴더를 클릭하며 파일 구조를 지도처럼 탐색, 파일 이름 검색</li>
+        <li>보드 메모에서 파일을 연결 — 검색으로 고르거나 코드맵에서 직접 클릭</li>
+        <li>연결된 파일을 에디터에서 열면 "보드에서 보기" 링크가 표시</li>
+        <li>연결된 파일·폴더에는 지도 위에 링크 배지가 표시</li>
+        <li>파일 생성·삭제를 실시간 반영, 새 파일·폴더 생성도 지도에서 바로</li>
+      </ul>
+    </div>
+    <div class="media"><img src="assets/screenshot-codemap.png" alt="코드맵" /></div>
+  </div>
+
+  <div class="detail">
+    <div>
+      <h2>AI 에이전트</h2>
+      <p>Mind는 VS Code 오픈소스를 기반으로 한 완전한 코드 에디터이고, 그 위에 AI 채팅과
+      에이전트가 내장되어 있습니다. 별도 구독 없이 본인의 API 키로 동작합니다.</p>
+      <ul>
+        <li>Claude·GPT·Gemini 6개 모델을 채팅에서 바로 전환</li>
+        <li>에이전트 모드: 파일 생성·수정·프로젝트 탐색을 AI가 직접 수행</li>
+        <li>변경 사항은 수락/거부로 검토 후 반영</li>
+        <li>보드에 올린 문서(PDF·Word·PPT)의 텍스트를 AI가 읽고 답변에 활용</li>
+        <li>API 키는 컴퓨터에 암호화 저장, 외부 전송 없음</li>
+      </ul>
+    </div>
+    <div class="media textmock">
+      <b>나</b> &nbsp;결제 모듈 보드 메모 봤지? 그 구조로 초안 잡아줘<br /><br />
+      <b class="u">Mind AI</b> &nbsp;보드의 '결제 흐름' 메모를 기준으로
+      <b>src/payments/</b>에 3개 파일을 만들었습니다.<br />
+      &nbsp;&nbsp;+ checkout.ts &nbsp;<span class="u">수락</span> · 거부<br />
+      &nbsp;&nbsp;+ session.ts &nbsp;&nbsp;<span class="u">수락</span> · 거부<br />
+      &nbsp;&nbsp;+ webhook.ts &nbsp;<span class="u">수락</span> · 거부
+    </div>
+  </div>
+
+  <div class="detail flip">
+    <div>
+      <h2>실시간 협업</h2>
+      <p>보드 왼쪽 위의 상태 칩에서 공유 코드를 복사해 전달하면, 상대방이 같은 보드에
+      들어옵니다. 회의하며 함께 그리는 화이트보드가 됩니다.</p>
+      <ul>
+        <li>여러 명이 동시에 편집 — 충돌 없이 실시간 동기화</li>
+        <li>참여자의 커서와 이름이 실시간으로 표시</li>
+        <li>연결이 끊겨도 오프라인으로 계속 작업, 다시 연결되면 동기화</li>
+        <li>내 보드 파일은 내 컴퓨터에 그대로 — 공유 보드에서 나가면 원래 보드로 복귀</li>
+      </ul>
+    </div>
+    <div class="media textmock">
+      <b class="u">● 실시간 연결됨</b> &nbsp;·&nbsp; 참여자 3명<br /><br />
+      지훈 &nbsp;<span class="u">▍</span> 온보딩 A/B 케이스 정리 중...<br />
+      수민 &nbsp;<span class="u">▍</span> 화면 스케치에 주석 추가<br />
+      나 &nbsp;&nbsp;&nbsp;<span class="u">▍</span> 결제 흐름 메모 연결
+    </div>
+  </div>
+
+</div>
+
+<section id="download">
+  <div class="container" style="text-align:center">
+    <h2 class="section-title">직접 써보는 게 가장 빠릅니다</h2>
+    <div class="dl-box">
+      <div class="os">Windows 10 / 11 (64-bit) · 무료 베타</div>
+      <a class="btn btn-primary btn-lg" href="download.html">다운로드</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot-inner">
+    <span>© 2026 Mind AI. All rights reserved.</span>
+    <div class="foot-links">
+      <a href="features.html">기능</a>
+      <a href="guide.html">시작 가이드</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">개인정보처리방침</a>
+      <a href="notices.html">라이선스 및 고지</a>
+      <a href="mailto:kehddus0303@gmail.com">문의</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
